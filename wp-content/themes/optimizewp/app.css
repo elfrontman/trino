@@ -1,0 +1,577 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic);
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamBold/GothamBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamBold/GothamBold.woff") format("woff"), url("../fonts/GothamBold/GothamBold.ttf") format("truetype"), url("../fonts/GothamBold/GothamBold.svg#GothamBold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamBlack/GothamBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamBlack/GothamBlack.woff") format("woff"), url("../fonts/GothamBlack/GothamBlack.ttf") format("truetype"), url("../fonts/GothamBlack/GothamBlack.svg#GothamBlack/GothamBlack") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/GothamMedium/GothamMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamMedium/GothamMedium.woff") format("woff"), url("../fonts/GothamMedium/GothamMedium.ttf") format("truetype"), url("../fonts/GothamMedium/GothamMedium.svg#GothamMedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  -webkit-font-smoothing: antialiased; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+header .topbar {
+  max-width: 1100px;
+  margin: 0 auto; }
+  header .topbar:before, header .topbar:after {
+    content: ' ';
+    display: block;
+    clear: both; }
+
+.logo {
+  float: left;
+  display: block;
+  width: 250px;
+  margin-top: 0.8rem; }
+
+.main-menu {
+  height: 85px;
+  position: relative;
+  padding-top: 2.2rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  float: right;
+  font-family: "Montserrat"; }
+  .main-menu ul {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .main-menu ul li {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 0 0.5rem;
+      position: relative;
+      line-height: 1.2; }
+      .main-menu ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #565656;
+        font-weight: bold;
+        -webkit-transition: all 0.28s ease-out;
+        -moz-transition: all 0.28s ease-out;
+        -o-transition: all 0.28s ease-out;
+        transition: all 0.28s ease-out;
+        width: 90%; }
+        .main-menu ul li a:hover {
+          color: #0e3e86; }
+
+.content-section {
+  padding: 3rem 0;
+  position: relative; }
+  .content-section .content-center {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto; }
+  .content-section .content-columns {
+    max-width: 1014px;
+    margin: 0 auto; }
+    .content-section .content-columns .column-content {
+      margin-bottom: 4.2rem; }
+      .content-section .content-columns .column-content.expanded .columns {
+        padding: 0; }
+        .content-section .content-columns .column-content.expanded .columns p {
+          width: 85%;
+          margin-left: 20px;
+          margin-top: 20px;
+          margin-bottom: 0px; }
+      .content-section .content-columns .column-content.all-content h2 {
+        width: 100%;
+        min-height: 100px; }
+      .content-section .content-columns .column-content.all-content p {
+        min-height: 130px;
+        margin-bottom: 1.5rem; }
+      .content-section .content-columns .column-content.content-right {
+        text-align: right; }
+        .content-section .content-columns .column-content.content-right h2 {
+          width: 100%; }
+      .content-section .content-columns .column-content ul {
+        color: #5f5f5f;
+        margin: 0;
+        margin-bottom: 0.8rem;
+        padding: 0;
+        list-style: none;
+        min-height: 130px; }
+        .content-section .content-columns .column-content ul li {
+          position: relative; }
+          .content-section .content-columns .column-content ul li:before {
+            content: '•';
+            -webkit-transform: translateX(-8px);
+               -moz-transform: translateX(-8px);
+                -ms-transform: translateX(-8px);
+                 -o-transform: translateX(-8px);
+                    transform: translateX(-8px);
+            display: inline-block; }
+      .content-section .content-columns .column-content .list-icons {
+        list-style: none;
+        width: 60%;
+        margin-top: 2rem; }
+        .content-section .content-columns .column-content .list-icons:before, .content-section .content-columns .column-content .list-icons:after {
+          content: '';
+          display: block;
+          clear: both; }
+        .content-section .content-columns .column-content .list-icons li {
+          position: relative;
+          width: 100px;
+          height: 80px;
+          text-align: center;
+          float: left;
+          width: 50%;
+          margin-bottom: 3rem;
+          line-height: 1; }
+          .content-section .content-columns .column-content .list-icons li:before {
+            content: '';
+            width: 73px;
+            height: 78px;
+            -webkit-transform: none;
+               -moz-transform: none;
+                -ms-transform: none;
+                 -o-transform: none;
+                    transform: none;
+            display: block; }
+          .content-section .content-columns .column-content .list-icons li span {
+            margin-top: 10px;
+            display: block; }
+    .content-section .content-columns .columns:first-child {
+      padding-left: 0;
+      padding-right: 2.1rem; }
+    .content-section .content-columns .columns:last-child {
+      padding-left: 2.1rem;
+      padding-right: 0; }
+    .content-section .content-columns h2 {
+      font-weight: 900;
+      font-size: 2rem;
+      width: 65%;
+      line-height: 1;
+      margin-bottom: 1.7rem; }
+  .content-section .title-section {
+    font-family: "Montserrat";
+    position: relative;
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.9rem;
+    display: inline-block;
+    font-weight: bold; }
+    .content-section .title-section:before {
+      content: '';
+      position: absolute;
+      width: 30%;
+      border-bottom: 3px solid;
+      bottom: -1px;
+      right: 51%;
+      -webkit-transform: translateX(50%);
+         -moz-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+           -o-transform: translateX(50%);
+              transform: translateX(50%); }
+  .content-section p {
+    font-family: "Roboto";
+    color: #5f5f5f;
+    line-height: 1.3;
+    font-size: 1.05rem;
+    font-weight: 400; }
+  .content-section h2 {
+    font-family: "Montserrat";
+    color: #1a1a1a;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.2; }
+  .content-section h3 {
+    font-family: "Montserrat";
+    color: #1a1a1a;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.2; }
+  .content-section.color-section h2 {
+    font-weight: 900;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1.8rem; }
+  .content-section.color-section p {
+    color: white;
+    font-size: 1rem; }
+  .content-section.color-section i {
+    font-weight: bold; }
+  .content-section.yellow-section {
+    background-color: #e1cc00; }
+  .content-section.blue-section {
+    background-color: #4ca4d8; }
+    .content-section.blue-section .title-section:before {
+      right: 47%; }
+  .content-section.gray-section {
+    background-color: #e7e7e7; }
+    .content-section.gray-section p {
+      color: #5f5f5f; }
+  .content-section.darkgray-section {
+    background-color: #4b4b4b; }
+  .content-section.white-section {
+    padding-top: 0; }
+    .content-section.white-section strong {
+      font-family: "Montserrat";
+      font-weight: 900;
+      text-align: center;
+      display: block;
+      line-height: 1;
+      margin-bottom: 1rem;
+      min-height: 32px; }
+    .content-section.white-section h2 {
+      width: 100%; }
+    .content-section.white-section ul {
+      font-family: "Roboto";
+      color: #5f5f5f;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      position: relative;
+      height: 120px; }
+      .content-section.white-section ul:before, .content-section.white-section ul:after {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+           -moz-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+             -o-transform: translateX(50%);
+                transform: translateX(50%); }
+      .content-section.white-section ul:after {
+        width: 40px;
+        height: 5px;
+        bottom: -13px; }
+      .content-section.white-section ul:before {
+        width: 100%;
+        height: 1px;
+        background-color: #5f5f5f; }
+      .content-section.white-section ul li {
+        position: relative;
+        line-height: 1;
+        margin-bottom: 0.5rem; }
+        .content-section.white-section ul li:before {
+          content: '•';
+          -webkit-transform: translateX(-8px);
+             -moz-transform: translateX(-8px);
+              -ms-transform: translateX(-8px);
+               -o-transform: translateX(-8px);
+                  transform: translateX(-8px);
+          display: inline-block; }
+      .content-section.white-section ul.yellow-list:after {
+        background-color: #e1cc00; }
+      .content-section.white-section ul.blue-list:after {
+        background-color: #4ca4d8; }
+
+.button {
+  background-color: #e1cc00;
+  font-family: "Montserrat";
+  color: #5f5f5f;
+  font-size: 0.8rem; }
+  .button:hover, .button:focus, .button:active {
+    background-color: #cab702; }
+
+.img-ciudad {
+  margin: -3rem 0; }
+  .img-ciudad img {
+    width: 100%; }
+
+.sprite, .content-section .content-columns .column-content .list-icons li:before, .img-material-particulado, .img-efectos-salud, .img-persona-sana, .img-grafica, .img-pulmones {
+  background-image: url(../img/asset.png);
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto; }
+
+.img-material-particulado {
+  width: 480px;
+  height: 350px;
+  background-position: -10px -31px;
+  -webkit-transform: translateY(10%);
+     -moz-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+       -o-transform: translateY(10%);
+          transform: translateY(10%); }
+
+.img-efectos-salud {
+  width: 863px;
+  height: 110px;
+  background-position: -10px -386px; }
+
+.img-persona-sana {
+  width: 125px;
+  height: 110px;
+  background-position: -489px -29px; }
+
+.img-grafica {
+  width: 143px;
+  height: 110px;
+  background-position: -623px -29px; }
+
+.img-pulmones {
+  width: 451px;
+  height: 684px;
+  background-position: -907px -43px;
+  position: absolute;
+  -webkit-transform: translate(50%, 50%);
+     -moz-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+       -o-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  bottom: 50%;
+  right: 48%; }
+
+.icons-respiratorio {
+  margin-left: -1.5rem !important;
+  float: left; }
+  .icons-respiratorio li:nth-child(1):before {
+    background-position: -485px -135px; }
+  .icons-respiratorio li:nth-child(2):before {
+    background-position: -563px -137px; }
+  .icons-respiratorio li:nth-child(3):before {
+    background-position: -643px -135px; }
+  .icons-respiratorio li:nth-child(4):before {
+    background-position: -721px -144px; }
+  .icons-respiratorio li:nth-child(5) {
+    width: 100% !important; }
+    .icons-respiratorio li:nth-child(5):before {
+      background-position: -805px -142px; }
+
+.icons-cardio {
+  margin-right: -1.5rem !important;
+  float: right; }
+  .icons-cardio li:nth-child(1):before {
+    background-position: -485px -218px; }
+  .icons-cardio li:nth-child(2):before {
+    background-position: -553px -215px; }
+  .icons-cardio li:nth-child(3):before {
+    background-position: -625px -219px; }
+  .icons-cardio li:nth-child(4):before {
+    background-position: -698px -221px; }
+  .icons-cardio li:nth-child(5) {
+    width: 100% !important; }
+    .icons-cardio li:nth-child(5):before {
+      background-position: -771px -231px; }
+
+.main-slider {
+  margin-top: 0; }
+  .main-slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 0;
+    overflow: hidden; }
+    .main-slider ul li {
+      display: inline-block; }
+
+@media screen and (min-width: 42em) and (max-width: 61em) {
+  br {
+    display: none; }
+  .content-section .content-columns {
+    padding: 0 1rem; }
+    .content-section .content-columns .column-content {
+      margin-bottom: 2.2rem; }
+      .content-section .content-columns .column-content.expanded .columns p {
+        width: 100%;
+        font-size: 0.8rem; }
+      .content-section .content-columns .column-content.all-content h2 {
+        font-size: 1.5rem;
+        padding-left: 1.2rem;
+        min-height: 100px; }
+      .content-section .content-columns .column-content h2 {
+        font-size: 1.8rem; }
+    .content-section .content-columns.expanded .columns {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; }
+  .content-section.color-section .columns:first-child {
+    padding-right: 1rem; }
+  .content-section.color-section .columns:last-child {
+    padding-left: 0rem; }
+  .content-section.white-section strong {
+    font-size: 0.9rem; }
+  .content-section.white-section ul {
+    height: 180px; }
+  .content-section p {
+    font-size: 0.8rem;
+    padding: 0rem 1.2rem; }
+  .content-section h2 {
+    padding: 0;
+    font-size: 1rem; }
+  .content-section h3 {
+    font-size: 0.8rem;
+    margin-bottom: 1.3rem; }
+    .content-section h3 br {
+      display: block; }
+  .content-section .button {
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
+  .content-section .img-ciudad {
+    margin: -2rem 0 -3rem; }
+  .img-material-particulado {
+    -webkit-transform: translateY(5%) scale(0.75) translateX(-100px);
+       -moz-transform: translateY(5%) scale(0.75) translateX(-100px);
+        -ms-transform: translateY(5%) scale(0.75) translateX(-100px);
+         -o-transform: translateY(5%) scale(0.75) translateX(-100px);
+            transform: translateY(5%) scale(0.75) translateX(-100px); }
+  .img-efectos-salud {
+    margin-bottom: 1rem;
+    -webkit-transform: scale(0.7);
+       -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+         -o-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-left: -6%; }
+  .img-pulmones {
+    -webkit-transform: translate(50%, 50%) scale(0.7);
+       -moz-transform: translate(50%, 50%) scale(0.7);
+        -ms-transform: translate(50%, 50%) scale(0.7);
+         -o-transform: translate(50%, 50%) scale(0.7);
+            transform: translate(50%, 50%) scale(0.7); }
+  .icons-cardio {
+    margin-right: -1rem !important; } }
+
+@media screen and (min-width: 62em) and (max-width: 64em) {
+  .content-section .content-columns {
+    padding: 0 3rem; }
+    .content-section .content-columns .column-content.all-content h2 {
+      min-height: 130px; }
+  .content-section.white-section ul {
+    height: 140px; }
+  .img-material-particulado {
+    -webkit-transform: translateY(5%) scale(0.85) translateX(-28px);
+       -moz-transform: translateY(5%) scale(0.85) translateX(-28px);
+        -ms-transform: translateY(5%) scale(0.85) translateX(-28px);
+         -o-transform: translateY(5%) scale(0.85) translateX(-28px);
+            transform: translateY(5%) scale(0.85) translateX(-28px); }
+  .img-efectos-salud {
+    margin-bottom: 1rem; }
+  .img-pulmones {
+    -webkit-transform: translate(50%, 50%) scale(0.9);
+       -moz-transform: translate(50%, 50%) scale(0.9);
+        -ms-transform: translate(50%, 50%) scale(0.9);
+         -o-transform: translate(50%, 50%) scale(0.9);
+            transform: translate(50%, 50%) scale(0.9); } }
+
+@media screen and (max-width: 39.9375em) {
+  br {
+    display: none; }
+  .content-section {
+    padding: 1.5rem 0; }
+    .content-section.color-section h2 {
+      font-size: 1rem; }
+    .content-section.color-section p {
+      font-size: 0.8rem; }
+    .content-section .content-columns h2 {
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center; }
+    .content-section .content-columns p {
+      text-align: justify; }
+    .content-section .content-columns.expanded .columns:first-child {
+      margin-bottom: 1rem; }
+    .content-section .content-columns .column-content {
+      margin-bottom: 2rem; }
+      .content-section .content-columns .column-content ul {
+        padding: 0rem 1.2rem;
+        min-height: auto; }
+      .content-section .content-columns .column-content .list-icons {
+        width: 100%;
+        margin: 1rem auto !important; }
+      .content-section .content-columns .column-content.content-right {
+        text-align: left; }
+      .content-section .content-columns .column-content.expanded .columns p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-right: 1rem;
+        text-align: justify; }
+      .content-section .content-columns .column-content.all-content h2 {
+        min-height: auto; }
+    .content-section .content-columns .columns:first-child, .content-section .content-columns .columns:last-child {
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; }
+    .content-section.white-section ul {
+      height: auto;
+      padding-bottom: 2rem; }
+      .content-section.white-section ul:before {
+        bottom: 20px; }
+      .content-section.white-section ul:after {
+        bottom: 18px; }
+    .content-section .title-section {
+      font-size: 1.3rem;
+      margin-bottom: 1rem; }
+    .content-section p {
+      font-size: 0.8rem;
+      padding: 0rem 1.2rem; }
+    .content-section h2 {
+      padding: 0rem 1.2rem;
+      font-size: 1rem; }
+    .content-section h3 {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-bottom: 1.3rem; }
+    .content-section .button {
+      display: block;
+      width: 90%;
+      margin: 0 auto; }
+  .padding-mobil {
+    padding: 0rem 1.2rem; }
+  .sprite-mobil, .img-material-particulado, .img-efectos-salud, .img-persona-sana, .img-grafica, .img-pulmones {
+    background-image: url(../img/asset_mobil.png); }
+  .img-ciudad {
+    margin-top: -1rem; }
+  .img-material-particulado {
+    width: 262px;
+    height: 194px;
+    background-position: -5px -16px;
+    -webkit-transform: translateY(-5%);
+       -moz-transform: translateY(-5%);
+        -ms-transform: translateY(-5%);
+         -o-transform: translateY(-5%);
+            transform: translateY(-5%); }
+  .img-efectos-salud {
+    width: 237px;
+    height: 30px;
+    background-position: -10px -216px;
+    -webkit-transform: translateY(-45%);
+       -moz-transform: translateY(-45%);
+        -ms-transform: translateY(-45%);
+         -o-transform: translateY(-45%);
+            transform: translateY(-45%); }
+  .img-persona-sana {
+    width: 75px;
+    height: 65px;
+    background-position: -265px -14px; }
+  .img-grafica {
+    width: 83px;
+    height: 60px;
+    background-position: -342px -18px; }
+  .img-pulmones {
+    position: static;
+    background-position: -493px 0;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+    width: 103px;
+    height: 152px;
+    margin: -1rem auto 0.5rem; } }
+
+/*# sourceMappingURL=maps/app.css.map */
